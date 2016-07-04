@@ -1,0 +1,172 @@
+body {
+	font-size: 1.8em;
+}
+
+body.additional {
+	font-size: 1.4em;
+}
+
+p {
+	-webkit-print-color-adjust: exact;
+}
+
+.fullwidth {
+	width: 100%;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.labels {
+	font-size: 2em;
+	margin: 0 auto;
+	/*max-width: 50%;*/
+	text-align: center;
+}
+
+.labels p {
+	/*background: #eee;*/
+	color: #333 !important;
+	-webkit-print-color-adjust: exact;
+	margin: 0.2em 0;
+	padding: 1.1em;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+
+.labels p span {
+    /*margin-right: 0.2em;*/
+}
+
+.labels img {
+    margin-top: -0.2em;
+    margin-right: 0.2em;
+    width: 1em;
+}
+
+.rtd img {
+    width: 1.2em;
+}
+
+.goal {
+	background: #A1EFE1 !important;
+}
+
+.start {
+	background: #FFF38F !important;
+}
+
+.end {
+	background: #7AFF7F !important;
+}
+
+.start, .end {
+    display: inline-block;
+	font-size: 0.8em;
+	width: 40%;
+}
+
+.availability {
+	background: #FFB159 !important;
+}
+
+.backlog {
+	background: #C26EFF !important;
+}
+
+.progress {
+	background: #FF4E48 !important;
+}
+
+.review {
+	background: #E89538 !important;
+}
+
+.test {
+	background: #FFEB46 !important;
+}
+
+.rtd {
+	background: #5CDE61 !important;
+    font-size: 0.8em;
+    padding: 1.6em !important;
+}
+
+.done {
+	background: #A1EFE1 !important;
+}
+
+.name, .date-range {
+	margin: 0.6em 0.4em 0;
+	width: 2.9em;
+}
+
+.date-range {
+	font-size: .6em;
+	line-height: 2.2em;
+	margin: 0;
+	width: 18%;
+}
+
+.name {
+	color: transparent;
+	display: inline-block;
+	background-color: #FFF !important;
+	background-position: center center !important;
+	background-size: cover !important;
+	border-radius: 5em;
+	height: 2.8em;
+	line-height: 2.8em;
+	margin: 0.5em 0.5em 0;
+	width: 2.8em;
+}
+
+.name:first-child {
+	margin-left: 1em;
+}
+
+.name:last-child {
+	margin-right: 1em;
+}
+
+.name.dave {
+	background-image: url('../img/avatars/dave.png') !important;
+}
+
+.name.simon {
+	background-image: url('../img/avatars/simon.png') !important;
+}
+
+.name.anna {
+	background-image: url('../img/avatars/anna.jpg') !important;
+	background-position-x: left !important;
+}
+
+.name.adnan {
+	background-image: url('../img/avatars/adnan.png') !important;
+}
+
+.name.nick {
+	background-image: url('../img/avatars/nick.jpg') !important;
+}
+
+@media print {
+	.labels p {
+		color: #333 !important;
+	}
+
+	@media print and (-webkit-min-device-pixel-ratio:0) {
+		.labels p {
+			color: #333 !important;
+		}
+	}
+}
